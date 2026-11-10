@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5c0e13">
+  <meta name="description" content="Jom Batokok — jagonya dendeng batokok. Temukan menu, cabang, jam operasional, dan pesan favoritmu.">
+  <title>Jom Batokok — Jagonya Dendeng Batokok</title>
+  <link rel="icon" href="assets/logo-jom-batokok.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,800;1,9..144,500;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-panel pre-l"></div><div class="pre-panel pre-r"></div>
+    <div class="pre-center">
+      <div class="pre-logo">
+        <svg viewBox="0 0 120 120"><circle class="pre-track" cx="60" cy="60" r="56"/><circle class="pre-ring" cx="60" cy="60" r="56"/></svg>
+        <img src="assets/hd/logo.jpg" alt="">
+      </div>
+      <div class="pre-word"><span>J</span><span>O</span><span>M</span><i></i><span>B</span><span>A</span><span>T</span><span>O</span><span>K</span><span>O</span><span>K</span></div>
+      <p class="pre-tag">Rasa Minang, bikin ingin datang lagi.</p>
+      <div class="pre-bar"><i id="preBar"></i></div>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollBar"></div>
+
+  <!-- Announcement marquee -->
+  <div class="announcement" aria-label="Rasa Minang, bikin ingin datang lagi.">
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Rasa Minang, bikin ingin datang lagi.</span><iconify-icon icon="ph:star-four-fill"></iconify-icon>
+        <span>Jagonya Dendeng Batokok</span><iconify-icon icon="ph:star-four-fill"></iconify-icon>
+        <span>Buka setiap hari di 3 cabang</span><iconify-icon icon="ph:star-four-fill"></iconify-icon>
+        <span>Rasa Minang, bikin ingin datang lagi.</span><iconify-icon icon="ph:star-four-fill"></iconify-icon>
+        <span>Jagonya Dendeng Batokok</span><iconify-icon icon="ph:star-four-fill"></iconify-icon>
+        <span>Buka setiap hari di 3 cabang</span><iconify-icon icon="ph:star-four-fill"></iconify-icon>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Jom Batokok beranda">
+      <img src="assets/logo-jom-batokok.jpg" alt="Logo Jom Batokok" width="46" height="46">
+      <span class="brand-copy"><b>JOM BATOKOK</b><small>Jagonya Dendeng Batokok</small></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#cerita">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#cabang">Cabang</a>
+      <a class="nav-cta" href="#pesan"><iconify-icon icon="ph:whatsapp-logo-fill"></iconify-icon> Pesan Sekarang</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Buka navigasi" aria-expanded="false" aria-controls="nav">
+      <iconify-icon class="i-open" icon="ph:list-bold"></iconify-icon>
+      <iconify-icon class="i-close" icon="ph:x-bold"></iconify-icon>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <span class="eyebrow light"><iconify-icon icon="ph:cooking-pot-fill"></iconify-icon> Makanan &amp; Minuman</span>
+        <h1>Jagonya<br><em>Dendeng</em> <span class="h1-soft">Batokok!</span></h1>
+        <p>Kenikmatan sajian khas Minang dengan pilihan lauk, nasi, dan minuman yang siap menemani waktu makanmu.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#menu">Lihat Menu <iconify-icon icon="ph:arrow-down-bold"></iconify-icon></a>
+          <a class="btn btn-ghost" href="#cabang"><iconify-icon icon="ph:map-pin-bold"></iconify-icon> Temukan cabang</a>
+        </div>
+        <ul class="hero-facts">
+          <li><b>3</b><span>Cabang<br>Jabodetabek</span></li>
+          <li><b>7 hari</b><span>Buka<br>setiap hari</span></li>
+          <li><b>26K</b><span>Dendeng<br>Batokok</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit-ring"></div>
+        <div class="arch-frame">
+          <img src="assets/hd/nasi-dendeng.jpg" alt="Nasi Dendeng Batokok di atas daun pisang dengan labu siam" fetchpriority="high">
+          <div class="arch-shade"></div>
+          <div class="arch-caption"><span>Favorit pelanggan</span><b>Nasi Dendeng Batokok</b></div>
+        </div>
+        <div class="arch-outline"></div>
+        <img class="hero-mini" src="assets/hd/dendeng-lambok.jpg" alt="Dendeng Lambok">
+        <iconify-icon class="spark s1" icon="ph:sparkle-fill"></iconify-icon>
+        <iconify-icon class="spark s2" icon="ph:sparkle-fill"></iconify-icon>
+        <iconify-icon class="spark s3" icon="ph:leaf-fill"></iconify-icon>
+        <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <circle cx="100" cy="100" r="96" fill="#e8b04a"/>
+          <circle cx="100" cy="100" r="90" fill="none" stroke="#5c0e13" stroke-width="1.5" stroke-dasharray="2 5"/>
+          <text font-size="15.5" font-weight="800" letter-spacing="3.4" fill="#5c0e13"><textPath href="#circ">RASA MINANG • BIKIN INGIN DATANG LAGI •</textPath></text>
+        </svg>
+        <iconify-icon class="stamp-icon" icon="ph:flame-fill"></iconify-icon>
+        <div class="chip chip-b"><iconify-icon icon="ph:clock-fill"></iconify-icon><div><b>Buka setiap hari</b><span>07.00 – 22.00 WIB</span></div></div>
+      </div>
+      <div class="hero-edge"></div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section" id="cerita">
+      <div class="intro-logo reveal">
+        <div class="logo-orbit"></div>
+        <div class="logo-disc"><img src="assets/hd/logo.jpg" alt="Logo Jom Batokok Dendeng"></div>
+        <span class="orbit-dot d1"></span><span class="orbit-dot d2"></span>
+      </div>
+
+      <div class="intro-copy reveal">
+        <span class="eyebrow"><iconify-icon icon="ph:heart-fill"></iconify-icon> Kenalan dengan kami</span>
+        <h2>Rasa khas yang<br><em>selalu dirindukan.</em></h2>
+        <p>Jom Batokok menghadirkan pilihan makanan dan minuman dengan inspirasi cita rasa Minang. Dari dendeng batokok hingga sajian nasi dan kopi, temukan menu favoritmu di cabang terdekat.</p>
+        <a class="under-link" href="#cabang">Kunjungi cabang kami <iconify-icon icon="ph:arrow-right-bold"></iconify-icon></a>
+      </div>
+
+      <div class="intro-photo reveal">
+        <div class="blob">
+          <img src="assets/hd/dendeng-batokok.jpg" alt="Dendeng Batokok dengan irisan cabai hijau dan bawang merah" loading="lazy">
+        </div>
+        <img class="mini-photo" src="assets/hd/dendeng-lambok.jpg" alt="Dendeng Lambok balado" loading="lazy">
+        <div class="photo-quote">
+          <iconify-icon icon="ph:quotes-fill"></iconify-icon>
+          <p>Jagonya <em>dendeng</em> batokok!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU CAROUSEL -->
+    <section class="menu-section section" id="menu">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow"><iconify-icon icon="ph:bowl-food-fill"></iconify-icon> Pilihan untukmu</span><h2>Menu <em>Jom Batokok</em></h2></div>
+        <p>Geser untuk menjelajahi sajian favoritmu. Harga ditampilkan dalam ribuan rupiah.</p>
+      </div>
+
+      <div class="menu-tabs reveal" role="tablist" aria-label="Kategori menu">
+        <button class="tab active" data-filter="all" role="tab" aria-selected="true"><iconify-icon icon="ph:squares-four-fill"></iconify-icon> Semua</button>
+        <button class="tab" data-filter="ala" role="tab" aria-selected="false"><iconify-icon icon="ph:fork-knife-fill"></iconify-icon> Ala Carte</button>
+        <button class="tab" data-filter="nasi" role="tab" aria-selected="false"><iconify-icon icon="ph:bowl-steam-fill"></iconify-icon> Menu Nasi</button>
+        <button class="tab" data-filter="beverage" role="tab" aria-selected="false"><iconify-icon icon="ph:orange-slice-fill"></iconify-icon> Beverage</button>
+        <button class="tab" data-filter="coffee" role="tab" aria-selected="false"><iconify-icon icon="ph:coffee-fill"></iconify-icon> Coffee</button>
+      </div>
+
+      <div class="carousel reveal">
+        <button class="car-btn prev" aria-label="Menu sebelumnya"><iconify-icon icon="ph:caret-left-bold"></iconify-icon></button>
+        <div class="car-track" id="menuTrack" tabindex="0" aria-label="Daftar menu, geser untuk melihat lebih banyak"></div>
+        <button class="car-btn next" aria-label="Menu berikutnya"><iconify-icon icon="ph:caret-right-bold"></iconify-icon></button>
+      </div>
+
+      <div class="car-meta reveal">
+        <span class="car-count"><b id="carIndex">01</b> / <span id="carTotal">00</span></span>
+        <div class="car-progress"><i id="carBar"></i></div>
+        <span class="car-hint"><iconify-icon icon="ph:hand-swipe-right-bold"></iconify-icon> Geser</span>
+      </div>
+
+      <p class="menu-footnote">* Harga mengikuti referensi menu yang diberikan dan dapat berubah sewaktu-waktu. Konfirmasi kembali kepada outlet sebelum memesan.</p>
+    </section>
+
+    <!-- FEATURE -->
+    <section class="feature-band">
+      <div class="feature-image reveal">
+        <div class="feature-glow"></div>
+        <img src="assets/hd/dendeng-lambok.jpg" alt="Dendeng Lambok Jom Batokok dengan sambal balado merah" loading="lazy">
+        <span class="feature-tag"><iconify-icon icon="ph:fire-fill"></iconify-icon> Dendeng Lambok</span>
+      </div>
+      <div class="feature-copy reveal">
+        <span class="eyebrow light"><iconify-icon icon="ph:sparkle-fill"></iconify-icon> Rasa yang mengundang</span>
+        <h2>Satu meja,<br><em>banyak cerita.</em></h2>
+        <p>Makan bersama jadi lebih seru dengan pilihan lauk dan minuman dari Jom Batokok.</p>
+        <a class="btn btn-gold" href="#pesan">Yuk, pesan sekarang <iconify-icon icon="ph:arrow-right-bold"></iconify-icon></a>
+      </div>
+    </section>
+
+    <!-- BRANCHES -->
+    <section class="branches-section section" id="cabang">
+      <div class="section-heading center reveal">
+        <span class="eyebrow"><iconify-icon icon="ph:map-pin-fill"></iconify-icon> Temukan kami</span>
+        <h2>Datang ke cabang<br><em>terdekatmu.</em></h2>
+        <p>Pilih lokasi Jom Batokok yang paling nyaman untuk kamu kunjungi. Semua cabang buka setiap hari.</p>
+      </div>
+
+      <div class="branch-row">
+        <article class="branch reveal">
+          <div class="branch-arch">
+            <span class="branch-city">Bekasi</span>
+            <span class="branch-num">01</span>
+            <iconify-icon class="branch-ico" icon="ph:storefront-fill"></iconify-icon>
+          </div>
+          <div class="branch-body">
+            <h3>Jom Batokok Sinpasa</h3>
+            <p class="b-line"><iconify-icon icon="ph:map-pin-fill"></iconify-icon> Pasar Sinpasa, Summarecon Bekasi, Blok F10</p>
+            <p class="b-line"><iconify-icon icon="ph:clock-fill"></iconify-icon> Setiap hari · 07.00–17.00 WIB</p>
+            <a class="b-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pasar+Sinpasa+Summarecon+Bekasi+Blok+F10"><iconify-icon icon="ph:navigation-arrow-fill"></iconify-icon> Petunjuk arah</a>
+          </div>
+        </article>
+
+        <article class="branch featured reveal">
+          <div class="branch-arch">
+            <span class="branch-city">Jakarta</span>
+            <span class="branch-num">02</span>
+            <iconify-icon class="branch-ico" icon="ph:storefront-fill"></iconify-icon>
+          </div>
+          <div class="branch-body">
+            <h3>Jom Batokok Santa</h3>
+            <p class="b-line"><iconify-icon icon="ph:map-pin-fill"></iconify-icon> Pasar Santa, Lantai 1, Food Court Area</p>
+            <p class="b-line"><iconify-icon icon="ph:clock-fill"></iconify-icon> Setiap hari · 10.00–18.00 WIB</p>
+            <a class="b-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pasar+Santa+Food+Court+Jakarta"><iconify-icon icon="ph:navigation-arrow-fill"></iconify-icon> Petunjuk arah</a>
+          </div>
+        </article>
+
+        <article class="branch reveal">
+          <div class="branch-arch">
+            <span class="branch-city">Bekasi</span>
+            <span class="branch-num">03</span>
+            <iconify-icon class="branch-ico" icon="ph:storefront-fill"></iconify-icon>
+          </div>
+          <div class="branch-body">
+            <h3>Jom Batokok Galaxy</h3>
+            <p class="b-line"><iconify-icon icon="ph:map-pin-fill"></iconify-icon> Galaxy Bekasi, RSN5 29</p>
+            <p class="b-line"><iconify-icon icon="ph:clock-fill"></iconify-icon> Setiap hari · 07.00–22.00 WIB</p>
+            <a class="b-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jom+Batokok+Galaxy+Bekasi+RSN5+29"><iconify-icon icon="ph:navigation-arrow-fill"></iconify-icon> Petunjuk arah</a>
+          </div>
+        </article>
+      </div>
+      <p class="location-note">Catatan: alamat cabang ditampilkan sesuai materi yang diberikan. Tautan peta membuka pencarian lokasi; pastikan pin dan alamat tepat sebelum perjalanan.</p>
+    </section>
+
+    <!-- ORDER -->
+    <section class="order-section" id="pesan">
+      <div class="order-inner reveal">
+        <span class="eyebrow light"><iconify-icon icon="ph:chat-circle-dots-fill"></iconify-icon> Ready to eat?</span>
+        <h2>Sudah tahu mau<br><em>makan apa hari ini?</em></h2>
+        <p>Hubungi Jom Batokok melalui WhatsApp untuk menanyakan menu dan pemesanan.</p>
+        <a class="btn btn-gold btn-large" id="whatsappOrder" href="https://wa.me/628979797799?text=Halo%20Jom%20Batokok%2C%20saya%20ingin%20bertanya%20tentang%20menu%20dan%20pemesanan." target="_blank" rel="noopener"><iconify-icon icon="ph:whatsapp-logo-fill"></iconify-icon> Pesan via WhatsApp</a>
+        <small>Nomor kontak: 0897-9797-799</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="f-brand">
+        <a class="footer-brand" href="#top"><img src="assets/logo-jom-batokok.jpg" alt="Logo Jom Batokok" width="56" height="56"><span><b>JOM BATOKOK</b><small>Jagonya Dendeng Batokok</small></span></a>
+        <p>Rasa khas, suasana hangat, dan menu untuk setiap selera. Rasa Minang, bikin ingin datang lagi.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/jom.batokok/" target="_blank" rel="noopener" aria-label="Instagram @jom.batokok"><iconify-icon icon="ph:instagram-logo-fill"></iconify-icon></a>
+          <a href="https://wa.me/628979797799" target="_blank" rel="noopener" aria-label="WhatsApp 0897-9797-799"><iconify-icon icon="ph:whatsapp-logo-fill"></iconify-icon></a>
+        </div>
+      </div>
+
+      <div class="f-col">
+        <h4>Jelajahi</h4>
+        <a href="#cerita">Tentang kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#cabang">Cabang</a>
+        <a href="#pesan">Pesan sekarang</a>
+      </div>
+
+      <div class="f-col f-branches">
+        <h4>Cabang kami</h4>
+        <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pasar+Sinpasa+Summarecon+Bekasi+Blok+F10"><b>Sinpasa, Bekasi</b><span>Pasar Sinpasa, Summarecon Bekasi, Blok F10 · 07.00–17.00</span></a>
+        <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Pasar+Santa+Food+Court+Jakarta"><b>Santa, Jakarta</b><span>Pasar Santa, Lantai 1, Food Court · 10.00–18.00</span></a>
+        <a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Jom+Batokok+Galaxy+Bekasi+RSN5+29"><b>Galaxy, Bekasi</b><span>Galaxy Bekasi, RSN5 29 · 07.00–22.00</span></a>
+      </div>
+
+      <div class="f-col">
+        <h4>Hubungi kami</h4>
+        <a href="https://wa.me/628979797799" target="_blank" rel="noopener" class="f-contact"><iconify-icon icon="ph:whatsapp-logo-fill"></iconify-icon> 0897-9797-799</a>
+        <a href="https://www.instagram.com/jom.batokok/" target="_blank" rel="noopener" class="f-contact"><iconify-icon icon="ph:instagram-logo-fill"></iconify-icon> @jom.batokok</a>
+        <span class="f-contact"><iconify-icon icon="ph:clock-fill"></iconify-icon> Buka setiap hari</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Jom Batokok. All rights reserved.</span>
+      <a href="#top">Kembali ke atas <iconify-icon icon="ph:arrow-up-bold"></iconify-icon></a>
+    </div>
+  </footer>
+
+  <a class="floating-wa" href="https://wa.me/628979797799?text=Halo%20Jom%20Batokok%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener" aria-label="Chat WhatsApp"><iconify-icon icon="ph:whatsapp-logo-fill"></iconify-icon><b>Chat kami</b></a>
+  <script src="script.js"></script>
+</body>
+</html>
