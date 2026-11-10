@@ -205,3 +205,17 @@ if (matchMedia('(hover:hover) and (min-width:901px)').matches && !matchMedia('(p
   });
   heroEl.addEventListener('pointerleave', () => { heroVis.style.setProperty('--px', '0px'); heroVis.style.setProperty('--py', '0px'); });
 }
+
+// ---------- Branch open/closed status (WIB) ----------
+(() => {
+  const toMin = t => { const [h, m] = t.split(':').map(Number); return h * 60 + m; };
+  const fmt = t => t.replace(':', '.');
+  const parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Jakarta', hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(new Date());
+  const now = (Number(parts.find(p => p.type === 'hour').value) % 24) * 60 + Number(parts.find(p => p.type === 'minute').value);
+  document.querySelectorAll('.br-row').forEach(r => {
+    const o = r.dataset.open, cl = r.dataset.close, om = toMin(o), cm = toMin(cl);
+    const st = r.querySelector('.br-status'), label = st.querySelector('em');
+    if (now >= om && now < cm) { label.textContent = 'Buka sekarang'; st.classList.remove('closed'); }
+    else { label.textContent = now < om ? 'Tutup · buka ' + fmt(o) : 'Tutup · buka besok ' + fmt(o); st.classList.add('closed'); }
+  });
+})();
